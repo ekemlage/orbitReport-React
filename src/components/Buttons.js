@@ -1,19 +1,19 @@
 import satData from "./satData";
 
 
-const Buttons = (filterByType, setSat, displaySats) => { //added 3 props
+const Buttons = (props) => { //could pass in filterByType, setSat, displaySats instead of props, would have to reference later on as filterByType instead of props.filterByType
   return(
     <div>
       
-      {displaySats.map((sat, id) => {
+      {props.displaySats.map((sat, id) => { //props.displaySats
         return (
-          <button onClick={() => filterByType(sat)} key={id}>
+          <button onClick={() => props.filterByType(sat)} key={id}>
           {sat} Orbit
           </button>
         );
       })};
       
-      <button onClick={() => setSat(satData)}>This should show every sat?</button>
+      <button onClick={() => props.setSat(satData)}>This should show every sat?</button> 
     
     </div>
   )

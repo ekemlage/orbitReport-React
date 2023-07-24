@@ -13,7 +13,7 @@ const Buttons = (props) => { //could pass in filterByType, setSat, displaySats i
         );
       })}
       
-      <button onClick={() => props.setSat(satData)}>Show All</button> 
+      <button onClick={() => props.setSat(satData)}>All Orbit</button> 
     
     </div>
   )

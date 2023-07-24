@@ -11,9 +11,9 @@ const Buttons = (props) => { //could pass in filterByType, setSat, displaySats i
           {sat} Orbit
           </button>
         );
-      })};
+      })}
       
-      <button onClick={() => props.setSat(satData)}>This should show every sat?</button> 
+      <button onClick={() => props.setSat(satData)}>Show All</button> 
     
     </div>
   )

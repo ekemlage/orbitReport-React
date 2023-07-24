@@ -5,8 +5,8 @@ import Banner from "./components/Banner";
 import satData from "./components/satData";
 
 function App() {
-  const [sat, setSat] = useState(satData);
-  const displaySats = [...new Set(satData.map((data) => data.orbitType))];
+  const [sat, setSat] = useState(satData); // what is sat vs setSat? // what is useState?
+  const displaySats = [...new Set(satData.map((data) => data.orbitType))]; //gets array of low, med, high types w/o repeats because of set
   const filterByType = (currentType) => {
     const displaySats = 
     satData.filter((newSatDisplay) => {
